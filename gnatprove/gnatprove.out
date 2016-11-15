@@ -1,0 +1,61 @@
+Summary of SPARK analysis
+=========================
+
+----------------------------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer                         Provers   Justified   Unproved
+----------------------------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .                               .           .          .
+Flow Dependencies                 .           .          .          .                               .           .          .
+Initialization                   29          29          .          .                               .           .          .
+Non-Aliasing                      .           .          .          .                               .           .          .
+Run-time Checks                  31           .          .          .    31 (CVC4  88%, altergo  12%)           .          .
+Assertions                       18           .          .          .    18 (CVC4  79%, altergo  21%)           .          .
+Functional Contracts             25           .          .          .                       25 (CVC4)           .          .
+LSP Verification                  .           .          .          .                               .           .          .
+----------------------------------------------------------------------------------------------------------------------------
+Total                           103    29 (28%)          .          .                        74 (72%)           .          .
+
+
+Analyzed 3 units
+in unit oric, 12 subprograms and packages out of 12 analyzed
+  Oric at oric.ads:3 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  Oric.Approximate_Pattern_Count at oric.ads:52 flow analyzed (0 errors and 0 warnings) and proved (9 checks)
+  Oric.Complement_Nucleotide at oric.ads:62 flow analyzed (0 errors and 0 warnings) and proved (6 checks)
+  Oric.Count_Pattern at oric.ads:23 flow analyzed (0 errors and 0 warnings) and proved (9 checks)
+  Oric.Hamming_Distance at oric.ads:46 flow analyzed (0 errors and 0 warnings) and proved (5 checks)
+  Oric.Max_Count at oric.ads:57 flow analyzed (0 errors and 0 warnings) and proved (4 checks)
+  Oric.Number_To_Pattern at oric.ads:42 flow analyzed (0 errors and 0 warnings) and proved (7 checks)
+  Oric.Number_To_Symbol at oric.ads:34 flow analyzed (0 errors and 0 warnings) and proved (6 checks)
+  Oric.Pattern_To_Number at oric.ads:40 flow analyzed (0 errors and 0 warnings) and proved (15 checks)
+  Oric.Reverse_Compliment_Pattern at oric.ads:74 flow analyzed (0 errors and 0 warnings) and proved (6 checks)
+  Oric.Symbol_To_Number at oric.ads:28 flow analyzed (0 errors and 0 warnings) and proved (6 checks)
+  Oric.Valid_Complement at oric.ads:68 flow analyzed (0 errors and 0 warnings) and proved (1 checks)
+in unit oric_unsafe, 0 subprograms and packages out of 26 analyzed
+  Oric_Unsafe at oric_unsafe.ads:12 skipped
+  Oric_Unsafe.Frequent_Words_M_RC at oric_unsafe.ads:33 skipped
+  Oric_Unsafe.Frequent_Words_Mismatches at oric_unsafe.ads:31 skipped
+  Oric_Unsafe.Hamming_DistanceS at oric_unsafe.ads:22 skipped
+  Oric_Unsafe.Neighborhood at oric_unsafe.ads:29 skipped
+  Oric_Unsafe.Neighborhoods at oric_unsafe.ads:26 skipped
+  Oric_Unsafe.Neighbors at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Element_Keys at a-coorse.adb:142, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Iterator_Interfaces at a-coorse.ads:70, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Iterator_Interfaces.First at a-iteint.ads:26, instantiated at a-coorse.ads:70, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Iterator_Interfaces.Last at a-iteint.ads:34, instantiated at a-coorse.ads:70, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Iterator_Interfaces.Next at a-iteint.ads:28, instantiated at a-coorse.ads:70, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Iterator_Interfaces.Previous at a-iteint.ads:36, instantiated at a-coorse.ads:70, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Set_Ops at a-coorse.adb:149, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Tree_Operations at a-coorse.adb:128, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Tree_Types at a-coorse.ads:336, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.Tree_Types.Implementation at a-crbltr.ads:52, instantiated at a-coorse.ads:336, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.adjustGP9236 at a-coorse.adb:267, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.clearGP10073 at a-coorse.adb:304, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.copy_treeGP5382 at a-coorse.adb:134, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.delete_treeGP5300 at a-coorse.adb:131, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.is_equalGP5503 at a-coorse.adb:139, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Neighbors.moveGP42166 at a-coorse.adb:1427, instantiated at oric_unsafe.ads:14 skipped
+  Oric_Unsafe.Pattern_To_String at oric_unsafe.ads:16 skipped
+  Oric_Unsafe.Print_Pattern at oric_unsafe.ads:18 skipped
+  Oric_Unsafe.Print_Pattern_Set at oric_unsafe.ads:20 skipped
+in unit runner, 0 subprograms and packages out of 1 analyzed
+  Runner at runner.adb:8 skipped
