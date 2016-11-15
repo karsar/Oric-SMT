@@ -1,4 +1,4 @@
--- verified part of Genome
+-- Verified parts for Oric code
 
 package Oric
   with SPARK_Mode
